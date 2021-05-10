@@ -47,11 +47,6 @@ function Nav() {
                                 Write 
                             </Link>
                         </li>
-                        <li className = 'nav-item'>
-                            <Link to='/readBlog' className = 'nav-links' onClick = {closeMobileMenu}>
-                                Read
-                            </Link>
-                        </li>
                         <li>
                             <Link to='/SignUp' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Sign Up
