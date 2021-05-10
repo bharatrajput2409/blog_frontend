@@ -39,20 +39,20 @@ export class writeBlog extends Component {
     render() {
         return (
             <>
-                <form onSubmit = {() => this.handleSubmit()}>
+                <form onSubmit = {() => this.handleSubmit()} autoComplete='off'>
                 <label>
                     Heading:
-                    <input type="text" name="heading" value = {this.state.heading} onChange = {this.handleInputChange} autoComplete = "off"/>
+                    <input type="text" name="heading" value = {this.state.heading} onChange = {this.handleInputChange}/>
                 </label>
                 <br />
                 <label>
                     Content:
-                    <textarea type="text" name="content" value = {this.state.content} onChange = {this.handleInputChange} autoComplete = "off"/>
+                    <textarea type="text" name="content" value = {this.state.content} onChange = {this.handleInputChange}/>
                 </label>
                 <br />
                 <label>    
                     Tags:
-                    <input type="text" name="tag" value = {this.state.tag} onChange = {this.handleInputChange} autoComplete = "off"/>
+                    <input type="text" name="tag" value = {this.state.tag} onChange = {this.handleInputChange}/>
                 </label>
                 <br />
                 <label>
