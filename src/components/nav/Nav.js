@@ -24,7 +24,7 @@ function Nav() {
     }, []);
     
     window.addEventListener('resize', showButton);
-
+   
     return (
         <>
             <nav className = 'navbar'>
@@ -44,20 +44,19 @@ function Nav() {
                         </li>
                         <li className = 'nav-item'>
                             <Link to='/writeBlog' className = 'nav-links' onClick = {closeMobileMenu}>
-                                Write 
+                                Write Blog
                             </Link>
                         </li>
-                        <li>
-                            <Link to='/SignUp' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                Sign Up
-                            </Link>
-                        </li>
+                        
+                        
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {button && <Button component= {Link} to="/SignUp" buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {button && <Button component= {Link} to="/SignUp" buttonStyle='btn--outline'>SIGN IN</Button>}
                 </div>
             </nav>
         </>
     )
+
 }
 
 export default Nav
