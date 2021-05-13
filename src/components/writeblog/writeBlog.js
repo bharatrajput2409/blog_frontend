@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './writeBlog.css'
-
+import Footer from '../footer/Footer'
 
 export class writeBlog extends Component {
 
@@ -59,6 +59,7 @@ export class writeBlog extends Component {
                     <input type = "submit" value = "Submit" />
                 </label>
                 </form> 
+                <Footer/>
             </>
         )
     }

@@ -26,6 +26,14 @@ function Home() {
           >
             SIGN UP
           </Button>
+          <Button
+            className='btns'
+            buttonStyle='btn--primary'
+            buttonSize='btn--large'
+            onClick={console.log('hey')}
+          >
+            LOGIN
+          </Button>
         </div>
       </div>
       <Footer></Footer>
